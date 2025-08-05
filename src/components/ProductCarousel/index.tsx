@@ -43,28 +43,30 @@ export default function ProductsCarousel() {
   }
 
   return (
-    <div className="w-full px-6 md:px-20 lg:px-24 py-8">
-      <h2 className="text-3xl font-bold mb-6">Produtos em Destaque</h2>
-      <Carousel
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        className="w-full"
-      >
-        <CarouselContent>
-          {products.map((product) => (
-            <CarouselItem
-              key={product.id}
-              className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4 p-4"
-            >
-              <ProductCard product={product} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
-      </Carousel>
-    </div>
+    <div className="w-full px-6 md:px-8 lg:px-10 py-16">
+      <h2 className="text-4xl font-bold mb-10 text-center uppercase">New Arrivals</h2>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full px-16"
+        >
+          <CarouselContent className="-ml-4">
+            {products.map((product) => (
+              <CarouselItem
+                key={product.id}
+                className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+              >
+                <div className="p-1">
+                  <ProductCard product={product} />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex left-4" />
+          <CarouselNext className="hidden sm:flex right-4" />
+        </Carousel>
+      </div>
   );
 }

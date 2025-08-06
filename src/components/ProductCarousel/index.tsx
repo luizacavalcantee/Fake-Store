@@ -51,7 +51,7 @@ export default function ProductsCarousel() {
           align: "start",
           loop: true,
         }}
-        className="w-full px-4 md:px-16 lg:px-20 border"
+        className="w-full px-4 md:px-16 lg:px-20"
       >
         <CarouselContent className="-ml-6">
           {products.map((product) => (

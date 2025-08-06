@@ -16,7 +16,7 @@ export default function HeroSection() {
         quality={100}
       />
 
-      <div className="relative pl-6 md:pl-8 lg:pl-10 w-full md:w-1/2">
+      <div className="relative pl-6 pr-6 md:pr-0 md:pl-8 lg:pl-10 w-full md:w-1/2">
         <h2 className="font-black tracking-tight text-4xl md:text-5xl lg:text-6xl">
           FIND CLOTHES <br className="hidden sm:block" /> THAT MATCHES{" "}
           <br className="hidden sm:block" /> YOUR STYLE

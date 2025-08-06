@@ -5,7 +5,7 @@ export default function Footer() {
           <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left md:max-w-sm">
             <h2 className="text-3xl font-bold">SHOP.CO</h2>
             <p className="text-zinc-500">
-              We have clothes that suits your style and which you're proud to
+              We have clothes that suits your style and which you&#39;re proud to
               wear. From women to men.
             </p>
           </div>

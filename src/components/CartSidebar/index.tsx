@@ -67,9 +67,6 @@ export default function CartSidebar({ isOpen, onClose }: CartSidebarProps) {
                             <span>Subtotal</span>
                             <span>{formatPrice(totalPrice)}</span>
                         </div>
-                        <button className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
-                            Finalizar Compra
-                        </button>
                     </div>
                 )}
             </aside>
